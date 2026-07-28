@@ -119,29 +119,31 @@ grep hello newfile
 
 grep -v hello newfile 
 ## OUTPUT
-
+![grep](./op-img/-vgrep.png)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
-
+![cat](./op-img/cat-i.png)
 
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+![cat](./op-img/cat-i-c.png)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
+![ubuntu](./op-img/ubuntu1.png)
 
+![ubuntu](./op-img/ubuntu2.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![grep](./op-img/grep-w-n.png)
 
 cat < newfile 
 ```
@@ -165,16 +167,16 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-
+![egrep](./op-img/egrep-w.png)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
-
+![egrep](./op-img/grep-w1.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
-
+![egrep](./op-img/grep-w(a-z).png)
 
 
 
