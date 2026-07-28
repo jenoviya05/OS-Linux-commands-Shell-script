@@ -326,7 +326,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![sort](./op-img/sort1.png)
 
 cat > file22
 ```
@@ -339,13 +339,15 @@ cat > file22
 ``` 
 uniq file22
 ## OUTPUT
-
+![sort](./op-img/uniq.png)
 
 
 #Using tr command
 
 cat file23 | tr [:lower:] [:upper:]
  ## OUTPUT
+![sort](./op-img/tr.png)
+
 
 cat < urllist.txt
 ```
@@ -360,19 +362,27 @@ www. yahoo. com
 www. google. com
 www. mrcet.... com
  ```
+
+
 cat urllist.txt | tr -d ' '
  ## OUTPUT
-
+![sort](./op-img/cat1.png)
 
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-
+![sort](./op-img/cat2.png)
 
 
 #Backup commands
+
 tar -cvf backup.tar *
 ## OUTPUT
+![tar](./op-img/tar1.png)
+![tar](./op-img/tar2.png)
+![tar](./op-img/tar3.png)
+![tar](./op-img/tar4.png)
+![tar](./op-img/tar5.png)
 
 
 mkdir backupdir
@@ -383,19 +393,28 @@ cd backupdir
  
 tar -tvf backup.tar
 ## OUTPUT
+![tar](./op-img/tvf1.png)
+![tar](./op-img/tvf2.png)
+![tar](./op-img/tvf3.png)
+![tar](./op-img/tvf4.png)
 
 
 tar -xvf backup.tar
 ## OUTPUT
+![tar](./op-img/xvf1.png)
+![tar](./op-img/xvf2.png)
+
 
 gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![tar](./op-img/ls.png)
+
+
 gunzip backup.tar.gz
 ## OUTPUT
-
+![tar](./op-img/gunzip.png)
  
 # Shell Script
 ```
