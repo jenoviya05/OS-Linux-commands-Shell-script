@@ -182,44 +182,45 @@ egrep -w '(H|h)ell[a-z]' newfile
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![egrep](./op-img/egrep^.png)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![egrep](./op-img/world.png)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![egrep](./op-img/World.png)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![egrep](./op-img/Ww.png)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![egrep](./op-img/egrep1-9.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
+![egrep](./op-img/linux1.png)
 
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-
+![egrep](./op-img/linux2.png)
 
 egrep l{2} newfile
 ## OUTPUT
-
+![egrep](./op-img/l2.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![egrep](./op-img/s2.png)
 
 cat > file23
 ```
