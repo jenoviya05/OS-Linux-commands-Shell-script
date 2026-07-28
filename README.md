@@ -58,7 +58,7 @@ comm file1 file2
  ## OUTPUT
 
  
-diff file1 file2
+## Diff file1 file2
 ## OUTPUT
 ![difffile](./op-img/difffile.png)
 
@@ -83,37 +83,37 @@ cat > file22
 
 cut -c1-3 file11
 ## OUTPUT
-
+![cutfile11](./op-img/cutfile11.png)
 
 
 
 cut -d "|" -f 1 file22
 ## OUTPUT
-
+![cutfile22](./op-img/cutfile22f1.png)
 
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![cutfile22](./op-img/cutfile22f2.png)3
 
 cat < newfile 
 ```
 Hello world
 hello world
 ^d
-````
+```
 cat > newfile 
+
 Hello world
 hello world
- 
+
 grep Hello newfile 
 ## OUTPUT
-
-
+![grepH](./op-img/grepH.png)
 
 grep hello newfile 
 ## OUTPUT
-
+![greph](./op-img/greph.png)
 
 
 
