@@ -238,80 +238,82 @@ cat > file23
 
 sed -n -e '3p' file23
 ## OUTPUT
-
+![sed](./op-img/sed1.png)
 
 
 sed -n -e '$p' file23
 ## OUTPUT
-
+![sed](./op-img/sed2.png)
 
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![sed](./op-img/sed3.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
-
+![sed](./op-img/sed4.png)
 
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
+![sed](./op-img/sed5.png)
 
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
+![sed](./op-img/sed6.png)
 
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
-
+![sed](./op-img/sed7.png)
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
-
+![sed](./op-img/sed8.png)
 
 
 seq 10 
 ## OUTPUT
-
+![seq](./op-img/seq1.png)
 
 
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![seq](./op-img/seq2.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-
+![seq](./op-img/seq3.png)
 
 
 seq 3 | sed '2a hello'
 ## OUTPUT
-
+![seq](./op-img/seq4.png)
 
 
 seq 2 | sed '2i hello'
 ## OUTPUT
-
+![seq](./op-img/seq5.png)
 
 seq 10 | sed '2,9c hello'
 ## OUTPUT
-
+![seq](./op-img/seq6.png)
 
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
-
+![seq](./op-img/seq7.png)
 
 
 sed -n '2,4{s/$/*/;p}' file23
-
+## OUTPUT
+![seq](./op-img/seq8.png)
 
 #Sorting File content
 cat > file21
