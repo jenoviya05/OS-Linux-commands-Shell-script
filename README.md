@@ -754,7 +754,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
-![pss](./op-img/testing1.png)
+![pss](./op-img/testing1.png).
 
 
 # using the case command
@@ -775,6 +775,8 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
+## OUTPUT
+![pss](./op-img/case1.png)
  
 cat > whiletest
 ```bash
@@ -790,6 +792,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
+
+## OUTPUT 
+![pss](./op-img/while1.png)
  
  
 cat untiltest.sh 
@@ -803,7 +808,10 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
+$ ./untiltest.sh
+
+## OUTPUT
+![pss](./op-img/until1.png) 
  
  
 cat forin1.sh 
@@ -817,7 +825,10 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+$ ./forin1.sh
+
+## OUTPUT
+![pss](./op-img/forin1.png)
  
 cat forin2.sh 
 ```bash
@@ -830,19 +841,11 @@ done
  ```
  
 $ chmod 755 forin2.sh
+$ ./forin2.sh
+
+## OUTPUT
+![pss](./op-img/forin2.png)
  
-cat forin2.sh 
-```bash
-\#!/bin/bash
-\# another example of how not to use the for command
-for test in I don't know if this'll work
-do
-echo “word:$test”
-done
-```
-$ chmod 755 forin2.sh
- 
-$ ./forin2.sh 
  
 cat forin3.sh 
 ```bash
@@ -853,20 +856,14 @@ do
 echo "word:$test"
 done
 ```
-$ ./forin3.sh 
- 
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
 
-## OUTPUT
+$ chmod 755 forin3.sh
+$ ./forin3.sh 
+
+ ## OUTPUT
+ ![pss](./op-img/forin3.png)
+
+
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -888,7 +885,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
-
+![pss](./op-img/cities.png)
 
 cat forctype.sh 
 ```bash
@@ -898,10 +895,14 @@ for (( i=1; i <= 5; i++ ))
 do
 echo "The value of i is $i"
 done
-````
+```
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
+
 ## OUTPUT
+
+![pss](./op-img/forctype.png)
+
 
 cat forctype1.sh 
 ```bash
@@ -914,7 +915,10 @@ done
 ```
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
+
 ## OUTPUT
+
+![pss](./op-img/forctype1.png)
 
 cat fornested1.sh 
 ```bash
@@ -933,7 +937,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
-
+![pss](./op-img/fornested1.png)
  
 cat forbreak.sh 
 ```bash
@@ -949,13 +953,14 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
  
-cat forbreak.sh 
+## OUTPUT
+![pss](./op-img/forbreak.png)
+
+cat forcontinue.sh 
 ```bash
 #!/bin/bash
 # breaking out of a for loop
@@ -975,6 +980,7 @@ $ chmod 755 forcontinue.sh
  
 $ ./forcontinue.sh 
 ## OUTPUT
+![pss](./op-img/forcontinue.png)
  
 cat exread.sh 
 ```bash
@@ -989,22 +995,8 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![pss](./op-img/exread.png)
 
-
- cat exread1.sh
-```bash
-#!/bin/bash
-# testing the read command
-read -p "Enter your name: " name
-echo "Hello $name, welcome to my program. “
-``` 
-$ chmod 755 exread1.sh 
-
-## OUTPUT
-
-
-
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -1022,12 +1014,14 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
- ./funcex.sh 
+./funcex.sh 
 
+![pss](./op-img/fun1.png)
  
- ./funcex.sh 1 2
+./funcex.sh 1 2
 
- 
+![pss](./op-img/fun2.png)
+
 cat argshift.sh
 ```bash
 #!/bin/bash 
@@ -1037,26 +1031,29 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
+$ ./argshift.sh 1 2 3
 
 ## OUTPUT
-$ ./argshift.sh 1 2 3
+![pss](./op-img/arg1.png)
  
- cat argshift1.sh
+
+cat argshift1.sh
 ```bash
- #/bin/bash 
- # store arguments in a special array 
+#/bin/bash 
+# store arguments in a special array 
 args=("$@") 
 # get number of elements 
 ELEMENTS=${#args[@]} 
- # echo each element in array  
+# echo each element in array  
 # for loop 
 for (( i=0;i<$ELEMENTS;i++)); do 
     echo ${args[${i}]} 
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
 $ ./argshift.sh 1 2 3
+## OUTPUT
+![pss](./op-img/arg2.png)
  
 cat argshift.sh
 ```bash
@@ -1069,9 +1066,11 @@ done
 set +x
 ```
 ## OUTPUT
- ./argshift.sh 1 2 3
+./argshift.sh 1 2 3
  
- 
+![pss](./op-img/arg3.png)
+
+
 cat > nc.awk
 ```bash
 BEGIN{}
@@ -1101,6 +1100,7 @@ ubcdfghj
 ```
 awk -f nc.awk data.dat
 ## OUTPUT 
+![pss](./op-img/s1.png)
  
 cat > palindrome.sh
 ```bash
@@ -1128,7 +1128,7 @@ else
 fi
 ```
 ## OUTPUT 
-
+![pss](./op-img/palindrome.png)
 
 # RESULT:
 The Commands are executed successfully.
