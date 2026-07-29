@@ -527,15 +527,15 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
+## OUTPUT
+![str](./op-img/str1.png)
 
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
-
+![str](./op-img/strcomp.png)
 
 # check file ownership
 cat < psswdperm.sh 
